@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <title>COIG - Oferta dla Policji</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous" /> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+  <meta name="theme-color" content="#fafafa" />
+
+  <style>
+    body {
+      /* width: 1920px; */
+      font-family: "Mulish", sans-serif;
+    }
+
+    header,
+    section,
+    footer {
+      margin: 20px 200px;
+    }
+
+    @media screen and (min-width: 2400px) {
+
+      header,
+      section,
+      footer {
+        margin: 20px 20%;
+      }
+    }
+
+    header {
+      height: 800px;
+      position: relative;
+    }
+
+    nav {
+      position: relative;
+    }
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      width: 230px;
+      justify-content: center;
+      /* align-items: center; */
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      flex-basis: 18%;
+      text-decoration: none;
+      position: relative;
+      box-shadow: 0px 0px 17px #00000000;
+      transition-duration: 1.5s;
+    }
+
+    /* .product:hover {
+      box-shadow: 0px 0px 17px #00000029;
+      max-height: 700px;
+    } */
+
+
+    /*hover zastąpiony relacją do klasy product-active */
+
+    .product-active {
+      box-shadow: 0px 0px 17px #00000029;
+      max-height: 700px;
+    }
+
+    .product a,
+    .product button {
+      border: none;
+      text-decoration: none;
+    }
+
+    .product:hover .button__product span {
+      rotate: 180deg;
+      transition-duration: 0.5s;
+    }
+
+    .product:hover .product-logo {
+      filter: none;
+    }
+
+    .product:hover {
+      box-shadow: 0px 0px 10px #00000015;
+    }
+
+    .product .read__more {
+      visibility: hidden;
+      max-height: 0px;
+      animation: no-display-hover 1s ease;
+    }
+
+    .product-active .read__more {
+      display: block;
+      max-height: 400px;
+      animation: display-hover 1s ease;
+      visibility: visible;
+    }
+
+
+    .product-active .product-logo {
+      filter: none;
+    }
+
+
+
+
+    @media screen and (max-width: 1002px) {
+      .product {
+        flex-direction: column;
+        background-color: aliceblue;
+        margin-bottom: 20px;
+        padding: 20px;
+
+      }
+    }
+
+    .products {
+      margin-top: 120px;
+    }
+
+    .products__headline {
+      font-size: 30px;
+      font-weight: 300;
+      position: relative;
+      margin-left: 10px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    .products__headline :after {
+      content: "";
+      background: #85A4FF;
+      position: absolute;
+      bottom: 9px;
+      left: -10px;
+      height: 76%;
+      width: 3px;
+    }
+
+    .products-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .products-list h2 {
+      font: normal normal 900 38px/50px Mulish;
+      text-transform: uppercase;
+    }
+
+    .product-name {
+      min-width: 200px;
+    }
+
+    .product-logo {
+      height: 223px;
+      padding-left: 35px;
+      padding-right: 35px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: aliceblue;
+      filter: sepia(100%) hue-rotate(180deg) saturate(180%);
+      -webkit-filter: sepia(100%) hue-rotate(180deg) saturate(180%);
+      -moz-filter: sepia(100%) hue-rotate(180deg) saturate(180%);
+    }
+
+    @media screen and (max-width: 1002px) {
+      .product-logo {
+        text-align: center;
+      }
+    }
+
+
+    .product-logo img {
+      max-height: 200px;
+      max-width: 200px;
+    }
+
+    .product-description {
+      min-width: 230px;
+      height: 85px;
+      text-decoration: none !important;
+    }
+
+
+    .header__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 1116px) {
+      .header__wrapper {
+        justify-content: center;
+
+      }
+    }
+
+    @media screen and (max-width: 1025px) {
+
+      header,
+      section,
+      footer {
+        margin: 20px 40px;
+      }
+
+      .section-text__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+      }
+
+      .section-text__column--images {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+      }
+
+
+      .slider__slider {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+
+      .slider__column--first {
+        margin-left: 0px !important;
+      }
+    }
+
+    .slider__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding-left: 45px;
+      padding-right: 45px;
+      margin-bottom: 40px
+    }
+
+    .slider__content h4 {
+      color: #333;
+      /* this is the fallback */
+      -webkit-text-stroke: 1px #333;
+      -webkit-text-fill-color: transparent;
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 90px;
+      text-align: center;
+      margin: 20px;
+    }
+
+
+
+    .slider__section-title {
+      font-size: 28px;
+    }
+
+    h2.slider__section-title:after {
+      content: "";
+      background: #0088ce;
+      position: absolute;
+      height: 16%;
+      left: 105px;
+      width: 4px;
+      transform: rotate(90deg);
+    }
+
+    @media screen and (max-width: 1025px) {
+      h2.slider__section-title:after {
+        display: none;
+      }
+    }
+
+    .slider__slider__button {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      border: solid 1px #0088ce;
+      ;
+      color: #0088ce;
+      background-color: #fff;
+      box-shadow: 0px 0px 17px #00000029;
+      text-transform: uppercase;
+      font-weight: bold;
+      max-width: 330px;
+      text-align: center;
+      transition: 0.5s;
+      margin-top: 30px;
+    }
+
+    .slider__slider__button:hover {
+      border: solid 2px #0088ce;
+      border-radius: 30px;
+      transition: all 0.5s;
+    }
+
+
+
+    .header__text {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .header__text h1 {
+      position: relative;
+      font: normal normal 300 45px Mulish;
+      letter-spacing: 0px;
+      max-width: 380px;
+      text-transform: uppercase;
+    }
+
+    .header__text h1 :after {
+      content: "";
+      background: #0088ce;
+      position: absolute;
+      bottom: -60px;
+      left: 60px;
+      height: 70%;
+      width: 4px;
+      transform: rotate(90deg)
+    }
+
+    .header__paragraph {
+      text-align: left;
+    }
+
+    .color-blue {
+      color: #0088ce;
+    }
+
+    .header__paragraph.color-green {
+      font-weight: 900;
+    }
+
+    .header__image {
+      min-width: 100px;
+      height: 100px;
+    }
+
+    .header__image:after {
+      content: "";
+      position: absolute;
+      background-image: url(img/background-under-logo.png);
+      background-position: -60px -500px;
+      background-repeat: no-repeat;
+      height: 280px;
+      width: 642px;
+      top: 0;
+      left: 0;
+      z-index: -100;
+    }
+
+    @media screen and (max-width: 767px) {
+      .header__image:after {
+        width: auto;
+      }
+    }
+
+    .header__image img {
+      margin-top: 36px;
+      max-width: 200px;
+      max-height: 60px;
+      margin-left: 200px;
+    }
+
+    img.header__image--background {
+      position: absolute;
+      z-index: -100;
+      top: 25%;
+      left: -16%;
+    }
+
+    img.header__image-dot-red {
+      position: absolute;
+      z-index: -100;
+      top: 75%;
+      left: 0%;
+    }
+
+    img.header__image-dot-blue {
+      position: absolute;
+      z-index: -100;
+      top: 85%;
+      right: 4%;
+    }
+
+    .header__button {
+      width: 232px;
+      padding: 15px;
+      color: #ffffff;
+      font-weight: bold;
+      max-width: 330px;
+      text-align: center;
+      transition: 0.5s;
+      background: #85A4FF 0% 0% no-repeat padding-box;
+      box-shadow: 3px 3px 10px #33333329;
+      border-radius: 15px;
+      opacity: 1;
+      text-decoration: none;
+      z-index: 100;
+    }
+
+    .header__button:hover {
+      border: solid 2px #0088ce;
+      border-radius: 30px;
+      transition: all 0.5s;
+    }
+
+
+
+
+    .slider {
+      margin-top: 120px;
+      margin-bottom: 120px;
+    }
+
+    .slider__slider {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 35px;
+      box-shadow: 0px 0px 19px #0000001a;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .slider__column--text {
+      display: flex;
+      flex-direction: column;
+      max-width: 328px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      margin-left: 60px;
+    }
+
+    .slider__column--first {
+      display: flex;
+      flex-direction: column;
+      max-width: 328px;
+      margin-top: 35px;
+      margin-bottom: 35px;
+      min-width: 45%;
+      margin-left: 50px;
+    }
+
+    @media screen and (max-width: 1002px) {
+      .slider__column--text {
+        max-width: 728px;
+
+      }
+    }
+
+    .slider__column--text li {
+      text-align: left;
+      font: normal normal normal 16px/20px Mulish;
+      letter-spacing: 0px;
+      color: #333333;
+      opacity: 1;
+      list-style: disc;
+    }
+
+    .slider__column--first {
+      margin-left: 60px;
+    }
+
+    .slider__column--last {
+      /* margin-right: 40px; */
+    }
+
+    .slider__image img {
+      margin: 20px 0;
+      margin-right: 45px;
+      max-width: 600px;
+      max-height: 400px;
+    }
+
+    .slider__image img {
+      border-radius: 35px;
+      width: 100%;
+    }
+
+    .slider__slider ul {
+      margin-left: -20px;
+    }
+
+
+    footer {
+      margin-top: 45px;
+      margin-bottom: 75px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 930px) {
+      footer {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    footer h3 {
+      font-size: 30px;
+      font-weight: 300;
+      position: relative;
+      margin-left: 10px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    footer h3:after {
+      content: "";
+      background: #85A4FF;
+      position: absolute;
+      bottom: 8px;
+      left: -10px;
+      height: 76%;
+      width: 2px;
+
+    }
+
+    /* customized slider */
+    @media screen and (max-width: 767px) {
+      .swiffy-slider {
+        width: auto;
+      }
+    }
+
+    .slider-indicators {
+      margin-bottom: -35px;
+    }
+
+    .slider-indicators>* {
+      color: #fff;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    @media screen and (max-width: 767px) {
+      .slider-indicators>* {
+        font-size: 0px;
+      }
+    }
+
+    .slider-indicators-square.slider-indicators>*,
+    .slider-indicators-square .slider-indicators>* {
+      width: 22px;
+      height: 21px;
+      padding: 1px 0 0 0;
+      background-color: #0088ce;
+      opacity: 1;
+      border-radius: 35px;
+    }
+
+    @media screen and (max-width: 767px) {
+
+      .slider-indicators-square.slider-indicators>*,
+      .slider-indicators-square .slider-indicators>* {
+        background: #ccc;
+        border-radius: 100%;
+        width: 0.5rem;
+        height: 0.5rem;
+        overflow: hidden;
+        border: 1px solid transparent;
+        margin: 0 3px;
+        margin-bottom: 20px;
+        padding: 0;
+      }
+    }
+
+    .slider-indicators>.active {
+      opacity: 1;
+      transition: background-color 0.3s ease;
+    }
+
+    .slider-indicators.archSlide>.active {
+      color: #0088ce;
+      background-color: #2a008b;
+    }
+
+    .slider-indicators.techSlide>.active {
+      background-color: #fde100;
+      color: #000;
+    }
+
+    .section-text__wrapper {
+      display: flex;
+    }
+
+    .section-text__column {
+      max-width: 645px;
+    }
+
+    .section-text__column--images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* width: 50%; */
+      margin-left: 50px;
+    }
+
+
+    .footer__image {
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer__image img {
+      width: 550px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .footer__image img {
+        width: auto;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .footer__image img {
+        width: 250px;
+      }
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 15px;
+      border: solid 1px #0088ce;
+      color: #0088ce;
+      background-color: #fff;
+      box-shadow: 0px 0px 17px #00000029;
+      text-transform: uppercase;
+      font-weight: bold;
+      max-width: 330px;
+      text-align: center;
+      transition: 0.5s;
+    }
+
+
+    .buttons-slider-selection {
+      display: flex;
+      justify-content: center;
+    }
+
+    .button-slider {
+      padding: 15px;
+      border: solid 1px #0088ce;
+      color: #0088ce;
+      background-color: #fff;
+      box-shadow: 0px 0px 17px #00000029;
+      text-transform: uppercase;
+      font-weight: bold;
+      max-width: 330px;
+      text-align: center;
+      transition: 0.5s;
+      margin: 20px;
+    }
+
+    .button-slider:hover {
+      box-shadow: 0px 0px 30px #000000d6;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .buttons-slider-selection {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .button-slider {
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    }
+
+    .buttonSelectedSlider {
+      box-shadow: 0px 0px 20px #000000c4;
+      color: #fff;
+      background-color: #0088ce;
+    }
+
+    .button__product {
+      display: flex;
+      justify-content: flex-start;
+      color: #0088ce;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #fff;
+      font-weight: bold;
+      max-width: 330px;
+      transition: 0.5s;
+      text-decoration: none;
+      border: none;
+    }
+
+    .button__product:hover {
+      animation: pulse 1.5s;
+      /* Animate for 1.5 seconds on hover */
+      cursor: pointer;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(.85);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+      }
+
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+      }
+    }
+
+    .button__product:hover span {
+      text-decoration: none !important;
+    }
+
+    .button__product span {
+      margin-left: 30px;
+    }
+
+    .button:hover {
+      border: solid 2px #0088ce;
+      border-radius: 30px;
+      transition: all 0.5s;
+    }
+
+    .download-button {
+      width: 100%;
+
+    }
+
+    .header__image-section {
+      min-width: 830px;
+      height: 920px;
+
+      background-image:
+        url(img/police-badge.PNG);
+
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      border-radius: 25% 75% / 50%;
+      cursor: help;
+      animation: morph 10s ease-in-out infinite;
+      position: absolute;
+      right: 30px;
+
+
+    }
+
+    @media screen and (max-width: 1755px) and (min-width: 1460px) {
+      .header__image-section {
+        min-width: 630px;
+        height: 720px;
+
+      }
+    }
+
+    @media screen and (max-width: 1460px) {
+      .header__image-section {
+
+        position: absolute;
+        opacity: 0.2;
+        transform: scale(.8);
+      }
+    }
+
+    .bold {
+      font-weight: 900;
+    }
+
+    .offers-buttons {
+      margin-top: 30px;
+      z-index: 100;
+    }
+
+    .case-studies {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 1124px) {
+      .case-studies {
+        flex-direction: column;
+      }
+
+    }
+
+    @media screen and (max-width: 767px) {
+      .offers-buttons {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .offers-buttons .header__button {
+        margin-top: 15px;
+      }
+
+      .case-studies {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+
+
+    .case-study {
+      background: #f5f5f7ec;
+      margin: 30px;
+      display: flex;
+      justify-content: center;
+      justify-content: center;
+      /* align-items: center; */
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    @media screen and (max-width: 700px) {
+      .case-study {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .case-study-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      filter: sepia(100%) hue-rotate(180deg) saturate(180%);
+      -webkit-filter: sepia(100%) hue-rotate(180deg) saturate(180%);
+      -moz-filter: sepia(100%) hue-rotate(180deg) saturate(180%);
+
+    }
+
+    .case-study-image img {
+      border-radius: 10px;
+    }
+
+    .case-study-button {
+      display: flex;
+      justify-content: flex-start;
+      color: #0088ce;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-weight: bold;
+      max-width: 330px;
+      transition: 0.5s;
+      text-decoration: none;
+      border: none;
+      margin-top: 0;
+    }
+
+    .case-study-image img {
+      width: 250px;
+    }
+
+    .case-study-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .case-study a {
+      text-decoration: none;
+    }
+
+    .case-study-content {
+      margin-left: 15px;
+    }
+
+
+    .save-land {
+      display: block;
+    }
+
+    .save-water,
+    .save-air,
+    .save-citizen,
+    .save-digital {
+      display: none;
+    }
+
+    /*slider */
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      min-height: 500px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--swiper-theme-color);
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: var(--swiper-theme-color);
+      fill: none;
+      stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
+    }
+
+
+    @keyframes morph {
+      0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+
+      }
+
+      25% {
+        border-radius: 45% 44% 40% 50% / 55% 45% 50% 50%;
+
+      }
+
+      50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+
+      }
+
+      75% {
+        border-radius: 45% 50% 40% 60% / 35% 20% 30% 50%;
+
+      }
+
+      100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+
+      }
+    }
+
+    @keyframes no-display-hover {
+      0% {
+        max-height: 500px;
+        opacity: 1;
+      }
+
+      /* 20% {
+        max-height: 400px;
+      }
+
+      40% {
+        max-height: 300px;
+      }
+
+      60% {
+        max-height: 200px;
+      }
+
+      80% {
+        max-height: 100px;
+      } */
+
+      100% {
+        max-height: 0;
+        opacity: 0;
+      }
+    }
+
+    @keyframes display-hover {
+      0% {
+        max-height: 0;
+        opacity: 0;
+      }
+
+      /* 20% {
+        max-height: 100px;
+      }
+
+      40% {
+        max-height: 200px;
+      }
+
+      60% {
+        max-height: 300px;
+      }
+
+      80% {
+        max-height: 400px;
+      } */
+
+      100% {
+        max-height: 500px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes product-expand {
+      0% {
+        height: 400px;
+      }
+
+
+      100% {
+        height: 800px !important;
+      }
+    }
+
+    @keyframes no-product-expand {
+      0% {
+        height: 800px !important;
+      }
+
+
+
+      100% {
+        height: 400px;
+      }
+    }
+
+
+    a,
+    span {
+      text-decoration: none !important;
+    }
+
+    .button__product span {
+      text-decoration: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="header__image">
+      <img src="img/logo-coig.png" />
+    </div>
+  </nav>
+  <header>
+    <div class="header__wrapper">
+      <div class="header__text">
+        <h1>Oferta <br> GK WASKO <br> <span class="bold">Dla Policji</span></h1>
+        <p class="header__paragraph">
+          Od 1951r. dostarczamy swoje rozwiązania dla średnich i dużychulotkaoferta
+          przedsiębiorstw, głównie z sektora paliwowo-energetycznego,
+          telekomunikacyjnego, finansowego i ochrony zdrowia, nauki i
+          szkolnictwa wyższego, a także dla administracji rządowej i
+          samorządowej. Zajmujemy się projektowaniem i produkcją
+          oprogramowania oraz realizujemy kompleksowe usługi w zakresie
+          wdrażania systemów informatycznych, automatyki i elektroniki.​
+        </p>
+        <!-- <a href="#" target="_blank" class="header__button">Skontaktuj się z nami!</a> -->
+        <div class="offers-buttons">
+          <a href="/download/produkty-polsec-pl.pdf" target="_blank" class="header__button">Nasza oferta - PL</a>
+          <a href="/download/products-polsec-eng.pdf" target="_blank" class="header__button">Our offer - ENG</a>
+        </div>
+
+      </div>
+      <div class="header__image-section">
+        <img class="header__image--background" src="img/background-under.png">
+        <img class="header__image-dot-red" src="img/background-red-dot.png">
+        <img class="header__image-dot-blue" src="img/background-blue-dot.png">
+      </div>
+    </div>
+  </header>
+  <section class="products">
+    <div class="div">
+
+      <h2 class="products__headline">Nasze rozwiązania<br><span class="bold"> dedykowane Policji:</span></h2>
+
+      <div class="products-list">
+
+        <div class="product">
+          <!-- <div class="product-name">Intradok</div> -->
+
+          <div class="product-logo"><img src="img/intradok.png"></div>
+          <div class="product-description">
+            <p>
+              <strong>Elektroniczne Zarządzanie Dokumentacją</strong>
+            </p>
+          </div>
+
+          <div class="read__more">
+            <p>
+              System intraDok zapewnia sprawdzone
+              rozwiązania dostosowane do kazdej jednostki
+              administracyjnej.
+
+              Jako Elektroniczny System Obiegu
+              Dokumentów pełni role wirtualnego biurka,
+              stanowiąc cyfrowe serce instytuciji
+            </p>
+            <a href="/download/polscec/intradok-ulotka.pdf" target="_blank">
+              <div class="download-button">
+                <button class="button__product">Pobierz ulotkę <span>&#8594;</span> </button>
+              </div>
+            </a>
+          </div>
+          <a href="https://intradok.pl/" target="_blank">
+            <div class="download-button">
+              <button class="button__product">Czytaj więcej <span>&#8594;</span> </button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <!-- <div class="product-name">mPortal</div> -->
+
+          <div class="product-logo"><img src="img/mportal.png"></div>
+          <div class="product-description">
+            <p> <strong>Platforma eUsług - CMS mPortal</strong></p>
+          </div>
+          <div class="read__more">
+            <p>
+              System mPortal to narzędzie, które w prosty i intuicyjny sposób umożliwia przygotowanie usług
+              elektronicznych dla twoich odbiorców. Udostępnia je wszystkie w jednym miejscu w atrakcyjny i
+              przejrzysty sposób
+            </p>
+            <a href="/download/polscec/mportal-ulotka.pdf" target="_blank">
+              <div class="download-button">
+                <button class="button__product">Pobierz ulotkę <span>&#8594;</span> </button>
+              </div>
+            </a>
+          </div>
+          <a href="https://www.coig.pl/oprogramowanie/mportal/" target="_blank">
+            <div class="download-button">
+              <button class="button__product">Czytaj więcej<span>&#8594;</span></button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <!-- <div class="product-name">eFlow</div> -->
+
+          <div class="product-logo"><img src="img/eflow.png"></div>
+
+          <div class="product-description">
+            <p> <strong>System obsługi procesów biznesowych</strong></p>
+          </div>
+
+
+          <div class="read__more">
+            <p>
+              Dzięki eFlow większość powtarzalnych procedur firmowych może zostać zamodelowanych jako międzysystemowe,
+              zautomatyzowane procesy biznesowe, co zwiększa efektywność pracy oraz obniża koszty przedsiębiorstwa
+            </p>
+            <a href="/download/polscec/eflow-ulotka.pdf" target="_blank">
+              <div class="download-button">
+                <button class="button__product">Pobierz ulotkę <span>&#8594;</span> </button>
+              </div>
+            </a>
+          </div>
+          <a href="https://www.coig.pl/oprogramowanie/eflow/" target="_blank">
+            <div class="download-button">
+              <button class="button__product">Czytaj więcej<span>&#8594;</span></button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <!-- <div class="product-name">eAdmin</div> -->
+
+          <div class="product-logo"><img src="img/eAdmin.svg"></div>
+          <div class="product-description">
+            <p><strong>Nadzorowanie infrastruktury IT</strong></p>
+          </div>
+
+          <div class="read__more">
+            <p>
+              eADMIN wspiera administratorów IT w codziennych obowiązkach. Za jego pomocą otrzymujemy dostęp do
+              zarządzania każdym urządzeniem podłączonym do firmowej sieci - stacjami roboczymi, drukarkami,
+              serwerami. Jednocześnie, z łatwością możemy diagnozować i rozwiązywać występujące problemy, nie
+              zakłócając przy tym wykonania obowiązków przez przcowników
+            </p>
+            <a href="/download/polscec/eadmin-ulotka.pdf" target="_blank">
+              <div class="download-button">
+                <button class="button__product">Pobierz ulotkę <span>&#8594;</span> </button>
+              </div>
+            </a>
+          </div>
+          <a href="https://www.wasko.pl/oferta/produkty/system-scada/nadzorowanie-infrastruktury-it/" target="_blank">
+            <div class="download-button">
+              <button class="button__product">Czytaj więcej<span>&#8594;</span></button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <!-- <div class="product-name">eDzielnicowy</div> -->
+
+          <div class="product-logo"><img src="img/edzielnicowy.svg"></div>
+
+          <div class="product-description">
+            <p><strong>Platforma dla KW Policji w obszarach prewencji i ruchu drogowego </strong></p>
+          </div>
+
+          <div class="read__more">
+            <p>
+              Platforma dla
+              Wojewódzkich
+              Komend
+              Policji dla obszaru Prewenci i Ruchu
+              Drogowego to system informatyczny o wysokiej dostepnosci, przeznaczony do wykorzystania prez jednostki
+              wewnetrzne
+              Policii oraz przez obywateli.
+              System skutecznie zapewnia komunikacje pomiedzy Policją
+              a
+              obywatelami
+              oraz wspiera
+              informowanie o zdarzeniach drogowych.
+            </p>
+          </div>
+          <a href="/download/edzielnicowy.pdf" target="_blank">
+            <div class="download-button">
+              <button class="button__product">Czytaj więcej<span>&#8594;</span></button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <!-- <div class="product-name">HelpDesk</div> -->
+          <div class="product-logo"><img src="img/Help Desk.svg"></div>
+          <div class="product-description">
+            <p><strong>Zarządzanie zgłoszeniami serwisowymi</strong></p>
+          </div>
+
+          <div class="read__more">
+            <p>
+              Świadczenie codziennego wsparcia technicznego nie musi by uciazliwym problemem. Skorzystaj z
+              profesjonalnego systemu do helpdesku.
+            </p>
+            <a href="/download/polscec/helpdesk-ulotka.pdf" target="_blank">
+              <div class="download-button">
+                <button class="button__product">Pobierz ulotkę <span>&#8594;</span> </button>
+              </div>
+            </a>
+          </div>
+          <a href="https://www.wasko.pl/oferta/produkty/system-scada/openeye-scada-helpdesk/" target="_blank">
+            <div class="download-button">
+              <button class="button__product">Czytaj więcej<span>&#8594;</span></button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <!-- <div class="product-name">SOC <br> Audyt bezpieczeństwa</div> -->
+
+          <div class="product-logo"><img src="img/cyber-security.svg"></div>
+          <div class="product-description">
+            <p><strong>Audyt Bezpieczenstwa Systemów
+                Informatycznych oraz Security Operations Center</strong></p>
+          </div>
+          <div class="read__more">
+            <p>
+              SOC to zespół operatorów identyfikujących i zabezpieczających najbardziej krytyczne miejsca w
+              organizacji. Dzięki synergii wielu rozwiazań oraz wymianie informacji pomiędzy nimi, pozwala odnaleźc
+              szereg problemów związanych z bezpieczeństwem, które do tej pory byty niezauważalne.
+            </p>
+            <a href="/download/polscec/data-center-ulotka.pdf" target="_blank">
+              <div class="download-button">
+                <button class="button__product">Pobierz ulotkę <span>&#8594;</span> </button>
+              </div>
+            </a>
+            <a href="/download/polscec/data-center-autyd-ulotka-.pdf" target="_blank">
+              <div class="download-button">
+                <button class="button__product">Pobierz ulotkę <span>&#8594;</span> </button>
+              </div>
+            </a>
+          </div>
+          <a href="https://www.coig.pl/uslugi/audyty-i-consulting-it/" target="_blank">
+            <div class="download-button">
+              <button class="button__product">Czytaj więcej<span>&#8594;</span></button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <!-- <div class="product-name">AI</div> -->
+          <div class="product-logo"><img src="img/coig-ai.svg"></div>
+          <div class="product-description">
+            <p><strong> Zaawansowana analityka i modele sztucznej inteligencji</strong></p>
+          </div>
+          <div class="read__more">
+            <p>
+              Rozwiązania analityczno-raportowe uwzględniajace zaawansowaną analitykę danych.
+            </p>
+          </div>
+          <a href="/download/COIG-AI.pdf" target="_blank">
+            <div class="download-button">
+              <button class="button__product">Czytaj więcej<span>&#8594;</span></button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <!-- <div class="product-name">Fotowoltaika</div> -->
+
+          <div class="product-logo"><img src="img/Fotowoltaika.svg"></div>
+          <div class="product-description">
+            <p> <strong>Fotowoltaika to zawansowana technologia do dostarczania energii</strong> </p>
+          </div>
+          <div class="read__more">
+            <p>
+              Architektura systemu pozwala na
+              monitorowanie i zarzadzanie praca
+              obiektów elektrowni rozproszonych
+              geograficznie, niezaleznie wielkosci,
+              liczby i typu zainstalowanych inwerterów
+              oraz pozostałych elementów aktywnych
+              takich jak: analizatory jakosci energii
+              elektrycznej, liczniki, sterowniki pola,
+              stacje pogodowe.
+            </p>
+          </div>
+          <a href="https://www.wasko.pl/oferta/produkty/system-scada/fotowoltaika/" target="_blank">
+            <div class="download-button">
+              <button class="button__product">Czytaj więcej<span>&#8594;</span></button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <!-- <div class="product-name">Awia</div> -->
+
+          <div class="product-logo"><img src="img/Awia.svg"></div>
+          <div class="product-description">
+            <p><strong>AWIA to system monitorowania floty pojazdów</strong></p>
+          </div>
+          <div class="read__more">
+            <p>
+              System
+              AWIA
+              Vehicle to nie tylko
+              monitoring, ale także nowoczesne narzędzie wspomagające zarządzanie flotą pojazdów.
+              To optymalne rozwiązanie do koordynowania działań logistycznych i kontroli pracy.
+            </p>
+
+            <a href="/download/polscec/awia-ulotka.pdf" target="_blank">
+              <div class="download-button">
+                <button class="button__product">Pobierz ulotkę <span>&#8594;</span> </button>
+              </div>
+            </a>
+          </div>
+          <a href="https://ente.com.pl/produkty/monitoring-pojazdow-i-maszyn/monitoring-floty-pojazdow" target="_blank">
+            <div class="download-button">
+              <button class="button__product">Czytaj więcej<span>&#8594;</span></button>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+  <section>
+    <h2 class="products__headline">WASKO Grupa Kapitałowa<br><span class="bold"> Bezpieczeństwo:</span></h2>
+    <div class="buttons-slider-selection">
+      <button class="button-slider buttonLand buttonSelectedSlider" onclick="showLand()" id="buttonLand">Na
+        lądzie</button>
+      <button class="button-slider buttonWater" onclick="showWater()" id="buttonWater">Na morzu</button>
+      <button class="button-slider buttonAir" onclick="showAir()" id="buttonAir">W powietrzu</button>
+      <button class="button-slider buttonCitizen" onclick="showCitizen()" id="buttonCitizen">Obywatela</button>
+      <button class="button-slider buttonDigital" onclick="showDigital()" id="buttonDigital">Cyfrowe</button>
+    </div>
+  </section>
+
+  <section class="slider-time save-land" id="land">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2002</h4>
+            <h3>Zintegrowany system informatyczy dla pierwszego w kraju Centrum Powiadamiania
+              Ratunkowego w Nowym Sączu, Gliwicach, Katowicach, Toruniu</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2005</h4>
+            <h3>Zintegrowany system wspomagania dowodzenia dla Straży Miejskiej m.st. Warszawy</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2007</h4>
+            <h3>System zabezpieczeń sieci intranet Komendy Wojewódzkiej Policji w Krakowie</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2008</h4>
+            <h3>System Śledzenia przesyłek Sił Zbrojnych na zlecenie Ministerstwa Obrony Narodowej</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2012</h4>
+            <h3>System wspomagania działań operacyjno-procesowych dla Centralnego Biura
+              Antykorupcyjnego</h3>
+            <h3>System obsługi Prezydencji Polski w Radzie Unii Europejskiej</h3>
+            <h3>Inteligentny system zarządzania komunikacją i transportem publicznym (ITS) dla
+              miasta Wrocławia</h3>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2013</h4>
+            <h3>Zintegrowany system wspomagania dowodzenia dla Straży Miejskiej w Toruniu oraz
+              GOPR i TOPR.</h3>
+            <h3>Budowa Obiektu Radionawigacyjnego DVOR/DME Czempiń</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2015</h4>
+            <h3>System monitorowania bezpieczeństwa pasażerów komunikacji zbiorowej dla Urzędu
+              Miasta Torunia</h3>
+            <h3>System detekcji gazu i pożaru w tłoczniach gazociągu JAMAL, gwarantującego
+              niezawodność na poziomie SIL2</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2017</h4>
+            <h3>System zarządzania ruchem na autostradzie A4 Katowice - Kraków</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2019</h4>
+            <h3>Platforma wspierająca pracę obszarów Prewencji i Ruchu Drogowego komend
+              wojewódzkich, powiatowych i miejskich Policji dla Komendy Wojewódzkiej Policji w
+              Katowicach</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2022</h4>
+            <h3>Wdrożenie systemów do zarządzania ruchem i bezpieczeństwem tunelu S7
+              Zakopianka</h3>
+            <h3>Wdrożenie systemów do zarządzania ruchem i bezpieczeństwem tunelu S2 Ursynów</h3>
+            <h3>System zarządzania ruchem na drogach krajowych i ekspresowych woj. Lubelskiego</h3>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="slider-time save-air" id="air" style="display: none;">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2011</h4>
+            <h3>Zaprojektowania wież radarowych w Poznaniu i Wrocławiu</h3>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2012</h4>
+            <h3>Zaprojektowanie, budowę i uruchomienie 4 ośrodków radiokomunikacyjnych w
+              regionie gdańskim dla Polskiej Agencji Żeglugi Powietrznej</h3>
+
+            <h3>Wyposażenie w systemy radiokomunikacyjne, wież radiokomunikacyjnych w Łodzi,
+              Rzeszowie i Poznaniu</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2013</h4>
+            <h3>Systemy radiokomunikacyjne Last Resort we wszystkich głównych lotniskach kraju - w
+              Warszawie, Krakowie, Katowicach, Poznaniu, Gdańsku, Wrocławiu, Bydgoszczy, Szczecinie i
+              Zielonej Górze</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2015</h4>
+            <h3>Zaprojektowanie, wybudowanie, wyposażenie obiektu kolokowanego OR/DME</h3>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="slider-time save-water" id="water" style="display: none;">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2015</h4>
+
+            <h3>Zaprojektowanie i budowa Pomorskiej Magistrali Teleinformatycznej
+              dla Urzędu Morskiego w Gdyni</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2015</h4>
+            <h3>Morski System Łączności w Niebezpieczeństwie (GMDSS-PL ang.: Global
+              Maritime Distress and Safety System) dla Urzędu Morskiego w Gdyni</h3>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="slider-time save-citizen" id="citizen" style="display: none;">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2004</h4>
+            <h3>System informatyczny odpowiedzialny za produkcję i wydawanie dowodów osobistych
+              zgodnego z wymogami Unii Europejskiej</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2004</h4>
+            <h3>System informatyczny odpowiedzialny za produkcję i wydawanie paszportów
+              zawierających dwie cechy biometryczne</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2010</h4>
+            <h3>System kontroli ruchu osobowego na obiektach sportowych i rekreacyjnych</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2012</h4>
+            <h3>Zintegrowany system informatyczny do obsługi numeru alarmowego 112 dla
+              Wojewódzkich Centrów Powiadamiania Ratunkowego</h3>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="slider-time save-digital" id="digital" style="display: none;">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2003</h4>
+            <h3>Projekt NCTS (New Computerised Transit System) dla Ministerstwa Finansów</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2006</h4>
+            <h3>System łączności radiowej oraz systemu lokalizacji pojazdów dla komendy Miejskiej Policji w Kielcach
+            </h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2008</h4>
+            <h3>Klaster obliczeniowy NOVA dla Wrocławskiego Centrum Sieciowo-Komputerowego przy Politechnice
+              Wrocławskiej</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2014</h4>
+            <h3>Szyfrator narodowy - urządzenie kryptograficzne z wykorzystaniem krzywych eliptycznych – projekt we
+              współpracy z Wojskową Akademią Techniczną</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content">
+            <h4>2007-2009, 2012, 2021</h4>
+            <h3>Systemu elektronicznego obiegu dokumentów, systemu do obsługi zamówień publicznych, kontroli dostępu,
+              zarządzania infrastrukturą IT dla Komendy Wojewódzkiej Policji w Krakowie i jednostek podległych</h3>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="products__case-study">
+
+    <h2 class="products__headline">Case study<br><span class="bold"> wdrożenia w KW Policji:</span></h2>
+    <div class="case-studies">
+      <a class="case-study-link" href="https://www.coig.pl/download/KWP-KATOWICE-CaseStudy.pdf" target="_blank">
+        <div class="case-study case-study--spodek">
+          <!-- <div class="product-name">mPortal</div> -->
+
+          <div class="case-study-image">
+            <img src="img/spodek.jpg">
+
+          </div>
+          <div class="case-study-content">
+            <div class="product-description">
+              <h3 class="products__headline bold">Katowice</h3>
+            </div>
+            <div>
+              <button class="case-study-button">Zobacz Case Study<span>&#8594;</span></button>
+            </div>
+          </div>
+
+        </div>
+      </a>
+      <a class="case-study-link" href="https://www.coig.pl/download/KWP-KRAK%C3%93W-CaseStudy.pdf" target="_blank">
+        <div class="case-study case-study--cracow">
+          <!-- <div class="product-name">mPortal</div> -->
+
+          <div class="case-study-image">
+            <img src="img/cracow.jpg">
+
+          </div>
+          <div class="case-study-content">
+            <div class="product-description">
+              <h3 class="products__headline bold">Kraków</h3>
+
+            </div>
+            <div>
+              <button class="case-study-button">Zobacz Case Study<span>&#8594;</span></button>
+            </div>
+          </div>
+
+        </div>
+      </a>
+    </div>
+
+  </section>
+  <footer>
+    <h3>Zapraszamy na nasze stoisko<BR> <span class="bold">na tagrach POLSECURE!</span></h3>
+    <div class="footer__image"><img src="img/polsecure.jpg" /></div>
+  </footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+
+  </script>
+
+
+
+  <script>
+    const boxes = document.querySelectorAll('.product');
+
+    for (const box of boxes) {
+      box.addEventListener('click', function handleClick() {
+        boxes.forEach((element) => {
+          element.classList.remove('product-active');
+        });
+        if (box.classList.contains("product-active")) {
+          box.classList.remove('product-active');
+        } else {
+          box.classList.add('product-active');
+        }
+
+
+      });
+    }
+
+
+  </script>
+
+  <script>
+
+    /*refactoring!!! */
+
+    function showLand() {
+      const buttonLand = document.getElementById("buttonLand");
+      const buttonWater = document.getElementById("buttonWater");
+      const buttonAir = document.getElementById("buttonAir");
+      const buttonCitizen = document.getElementById("buttonCitizen");
+      const buttonDigital = document.getElementById("buttonDigital");
+      buttonLand.classList.add("buttonSelectedSlider");
+      buttonWater.classList.remove("buttonSelectedSlider");
+      buttonAir.classList.remove("buttonSelectedSlider");
+      buttonCitizen.classList.remove("buttonSelectedSlider");
+      buttonDigital.classList.remove("buttonSelectedSlider");
+
+      var land = document.getElementById("land");
+      var water = document.getElementById("water");
+      var air = document.getElementById("air");
+      var citizen = document.getElementById("citizen");
+      var digital = document.getElementById("digital");
+
+      if (land.style.display === "none") {
+        land.style.display = "block";
+        water.style.display = "none";
+        air.style.display = "none";
+        citizen.style.display = "none";
+        digital.style.display = "none";
+
+      } else {
+        land.style.display = "none";
+
+      }
+    }
+
+    function showWater() {
+      const buttonLand = document.getElementById("buttonLand");
+      const buttonWater = document.getElementById("buttonWater");
+      const buttonAir = document.getElementById("buttonAir");
+      const buttonCitizen = document.getElementById("buttonCitizen");
+      const buttonDigital = document.getElementById("buttonDigital");
+      buttonLand.classList.remove("buttonSelectedSlider");
+      buttonWater.classList.add("buttonSelectedSlider");
+      buttonAir.classList.remove("buttonSelectedSlider");
+      buttonCitizen.classList.remove("buttonSelectedSlider");
+      buttonDigital.classList.remove("buttonSelectedSlider");
+
+      var land = document.getElementById("land");
+      var water = document.getElementById("water");
+      var air = document.getElementById("air");
+      var citizen = document.getElementById("citizen");
+      var digital = document.getElementById("digital");
+      if (water.style.display === "none") {
+        water.style.display = "block";
+        land.style.display = "none";
+        air.style.display = "none";
+        citizen.style.display = "none";
+        digital.style.display = "none";
+
+      } else {
+        water.style.display = "none";
+      }
+    }
+
+    function showAir() {
+      var land = document.getElementById("land");
+      var water = document.getElementById("water");
+      var air = document.getElementById("air");
+      var citizen = document.getElementById("citizen");
+      var digital = document.getElementById("digital");
+      if (air.style.display === "none") {
+        air.style.display = "block";
+        land.style.display = "none";
+        water.style.display = "none";
+        citizen.style.display = "none";
+        digital.style.display = "none";
+      } else {
+        air.style.display = "none";
+      }
+      const buttonWater = document.getElementById("buttonWater");
+      const buttonAir = document.getElementById("buttonAir");
+      const buttonCitizen = document.getElementById("buttonCitizen");
+      const buttonLand = document.getElementById("buttonAir");
+      const buttonDigital = document.getElementById("buttonDigital");
+      buttonLand.classList.remove("buttonSelectedSlider");
+      buttonWater.classList.remove("buttonSelectedSlider");
+      buttonAir.classList.add("buttonSelectedSlider");
+      buttonCitizen.classList.remove("buttonSelectedSlider");
+      buttonDigital.classList.remove("buttonSelectedSlider");
+    }
+
+    function showCitizen() {
+      var land = document.getElementById("land");
+      var water = document.getElementById("water");
+      var air = document.getElementById("air");
+      var citizen = document.getElementById("citizen");
+      var digital = document.getElementById("digital");
+      if (citizen.style.display === "none") {
+        citizen.style.display = "block";
+        land.style.display = "none";
+        water.style.display = "none";
+        air.style.display = "none";
+        digital.style.display = "none";
+      } else {
+        citizen.style.display = "none";
+      }
+
+      const buttonLand = document.getElementById("buttonLand");
+      const buttonWater = document.getElementById("buttonWater");
+      const buttonAir = document.getElementById("buttonAir");
+      const buttonCitizen = document.getElementById("buttonCitizen");
+      const buttonDigital = document.getElementById("buttonDigital");
+      buttonLand.classList.remove("buttonSelectedSlider");
+      buttonWater.classList.remove("buttonSelectedSlider");
+      buttonAir.classList.remove("buttonSelectedSlider");
+      buttonCitizen.classList.add("buttonSelectedSlider");
+      buttonDigital.classList.remove("buttonSelectedSlider");
+    }
+    function showDigital() {
+      var land = document.getElementById("land");
+      var water = document.getElementById("water");
+      var air = document.getElementById("air");
+      var citizen = document.getElementById("citizen");
+      var digital = document.getElementById("digital");
+      if (digital.style.display === "none") {
+        digital.style.display = "block";
+        land.style.display = "none";
+        water.style.display = "none";
+        air.style.display = "none";
+        citizen.style.display = "none";
+      } else {
+        digital.style.display = "none";
+      }
+
+      const buttonLand = document.getElementById("buttonLand");
+      const buttonWater = document.getElementById("buttonWater");
+      const buttonAir = document.getElementById("buttonAir");
+      const buttonCitizen = document.getElementById("buttonCitizen");
+      const buttonDigital = document.getElementById("buttonDigital");
+      buttonLand.classList.remove("buttonSelectedSlider");
+      buttonWater.classList.remove("buttonSelectedSlider");
+      buttonAir.classList.remove("buttonSelectedSlider");
+      buttonCitizen.classList.remove("buttonSelectedSlider");
+      buttonDigital.classList.add("buttonSelectedSlider");
+    }
+  </script>
+
+
+
+
+
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments);
+    };
+    ga.q = [];
+    ga.l = +new Date();
+    ga("create", "UA-XXXXX-Y", "auto");
+    ga("set", "anonymizeIp", true);
+    ga("set", "transport", "beacon");
+    ga("send", "pageview");
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
